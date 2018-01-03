@@ -1,0 +1,66 @@
+/*Viewport<1024px || small laptops*/
+@media only screen and (max-width: 1024px){
+    .fadeInLeft{
+    	transform: translate3d(-10%, 0, 0);
+    }
+    .sidebar{
+    	width: 30%;
+    }
+    .logo{
+    	padding: 0.0rem 1rem;
+    }
+    .container{
+    	height: 70%;
+    	overflow-y: scroll;
+    }
+}
+
+/*Viewport<768px || small tablets*/
+@media only screen and (max-width: 768px){
+	.sidebar{
+    	width: 40%;
+    }
+    .logo{
+    	padding: 0.5rem;
+    }
+    .bars{
+    	left: 1.5rem!important;
+    }
+}
+
+/*Viewport<425px || large mobiles*/
+@media only screen and (max-width: 425px){
+	.sidebar{
+    	width: 70%;
+    }
+    .logo .prajLogo{
+    	width: 20%!important;
+    	left: -40%;
+    }
+    .logo .prajTxt{
+    	width: 90%!important;
+    }
+    .menu-item i{
+    	margin: 0 1rem 0 3rem;
+    }
+    .bars{
+    	left: 0.7rem!important;
+    }
+}
+@media only screen and (max-width: 412px){
+	
+}
+
+/*Viewport<375px || medium mobiles*/
+@media only screen and (max-width: 375px){
+	
+}
+
+@media only screen and (max-width: 360px){
+	
+}
+
+/*Viewport<320px || small mobiles*/
+@media only screen and (max-width: 320px){
+	
+}

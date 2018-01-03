@@ -1,0 +1,92 @@
+/*Viewport<1024px || small laptops*/
+@media only screen and (max-width: 1024px){
+    .colgLogo img {
+	    margin: 0.55rem 0rem;
+	    height: 70%;
+	}
+}
+
+/*Viewport<768px || small tablets*/
+@media only screen and (max-width: 768px){
+	.header div{
+		height: 3.2rem;
+	}
+	.prajLogo img{
+		margin:0 0.5rem 0 0;
+	}
+	.prajTxt span{
+		font-size: 12px;
+		left: 4rem;
+	}
+	.prajTxt strong{
+		font-size: 12px;
+		font-weight: bold;
+	}
+}
+
+/*Viewport<425px || large mobiles*/
+@media only screen and (max-width: 425px){
+    *{
+		font: 14px 'Open Sans', Sans-Serif;
+	}
+	body{
+		padding:0.5em;
+	}
+	.row{
+		padding:0;
+	}
+	.midData{
+		display:none;
+	}
+	.prajLogo{
+		width: 15%!important;
+	}
+	.prajLogo img{
+		left: 5%;
+	}
+	.prajTxt{
+		width: 80%!important;
+	}
+	.prajTxt img{
+		height: 100%!important;
+	}
+	.colgLogo{
+		display: none!important;
+	}
+	
+}
+@media only screen and (max-width: 412px){
+	
+}
+
+/*Viewport<375px || medium mobiles*/
+@media only screen and (max-width: 375px){
+	.prajTxt img{
+		width: 100%!important;
+		height: auto!important;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	
+}
+
+/*Viewport<320px || small mobiles*/
+@media only screen and (max-width: 320px){
+	*{
+		font: 12px 'Open Sans', Sans-Serif;
+	}
+	.header div{
+		height: 2.5rem;
+	}
+	.prajTxt{
+		top: -1rem;
+	}
+	.prajLogo img{
+		width: 90%;
+		height: auto;
+	}
+	.prajTxt span{
+		left: 1rem;
+	}
+}

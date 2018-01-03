@@ -1,0 +1,43 @@
+.footer{
+	position: fixed;
+	bottom: 0.0rem;
+	height: 3.5rem;
+	left: 0;
+}
+.social-media{
+	margin: 0 auto;
+}
+.icon{
+	width: 16%;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	height:2.0rem;
+}
+.icon i{
+	font-size: 1.8rem;
+	margin-bottom: 0.2rem;
+	transition: 0.3s cubic-bezier(0, 0.53, 0.61, 1.3);
+}
+.icon span{
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 300;
+	background-color: #46a9ef;
+	padding: 0.5rem 0;
+	color:white;
+	transition: 0.4s ease-out;
+}
+.icon:hover .fab{
+	transform: translateY(-2.2rem);
+	opacity: 0.2;
+	transition: 0.4s ease-in;
+}
+.icon:hover .write{
+	transform: translateY(-2.2rem);
+	transition: 0.3s cubic-bezier(0, 0.53, 0.61, 1.3);
+}
+.icon a{
+	text-decoration: none;
+	color: #444;
+}

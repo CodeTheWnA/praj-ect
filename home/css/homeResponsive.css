@@ -1,0 +1,96 @@
+/*Viewport<1024px || small laptops*/
+@media only screen and (max-width: 1024px){
+    .midData{
+        margin-top: 2rem;
+    }
+}
+
+/*Viewport<768px || small tablets*/
+@media only screen and (max-width: 768px){
+	.midData{
+        margin-top: 12rem;
+    }
+}
+
+/*Viewport<425px || large mobiles*/
+@media only screen and (max-width: 425px){
+	body{
+        overflow: hidden;
+    }
+    .midData{
+        margin-top: 1rem;
+        display: block;
+    }
+    .left{
+        display: block!important;
+        height: 7rem;
+        margin: 5rem 0 0 5%;
+        width: 90%; 
+    }
+    .noticeBoard{
+        width: 100%;
+        height: 100%;
+    }
+    .displayer{
+        top: -1.5rem;
+        right: -1.5rem;
+        bottom: auto;
+    }
+    #wrapperNotice{
+        width: 100%;
+        height: 100%;
+        overflow:scroll;
+        bottom: auto;
+    }
+    .mainNavigation,.right{
+        display: block!important;
+        width: 90%!important;
+    }
+    .mainNavigation{
+        left: 5%;
+        top: 1%;
+        height: 25rem;
+    }
+    .mainNavigation a{
+        width: 7rem;
+    }
+    .mainNavigation i{
+        margin: 0!important;
+        display: block;
+        top: 0;
+    }
+    .right{
+        margin: 0 10% 0 3%;
+        height: 7rem;
+        float: left;
+        bottom: 1.5rem;
+    }
+    #wrapperUpdate{
+        bottom: 1.5rem;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .updateButton{
+        left: -1rem;
+        bottom:0;
+        top:auto;
+        right: auto;
+    }
+}
+@media only screen and (max-width: 412px){
+	
+}
+
+/*Viewport<375px || medium mobiles*/
+@media only screen and (max-width: 375px){
+	
+}
+
+@media only screen and (max-width: 360px){
+	
+}
+
+/*Viewport<320px || small mobiles*/
+@media only screen and (max-width: 320px){
+	
+}
