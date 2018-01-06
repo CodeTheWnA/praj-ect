@@ -1,0 +1,227 @@
+.hexagon {
+  position: relative;
+  width: 160px; 
+  height: 92.38px;
+  margin: auto;
+  background-image: url(../img/default-profiel-image.jpg);
+  background-size: auto 173.2051px;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  border-left: solid 5px #ffffff;
+  border-right: solid 5px #ffffff;
+    left: 0;
+    right: 0;
+    top: 17rem;
+    
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 113.14px;
+  height: 113.14px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 18.43px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 150.0000px;
+  height: 86.60254037844388px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -56.5685px;
+  border-top: solid 7.0711px #ffffff;
+  border-right: solid 7.0711px #ffffff;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -56.5685px;
+  border-bottom: solid 7.0711px #ffffff;
+  border-left: solid 7.0711px #ffffff;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 2.8868px;
+  left: 0;
+  width: 150.0000px;
+  height: 86.6025px;
+  z-index: 2;
+  background: inherit;
+}
+/*******************************************************************************/
+/*small hexagon*/
+
+
+.hexagonS {
+  position: relative;
+  width: 125px; 
+  height: 72.17px;
+  margin: 36.08px 40;
+  background-image: url(../img/default-profiel-image.jpg);
+  background-size: auto 132.7906px;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  border-left: solid 5px #ffffff;
+  border-right: solid 5px #ffffff;
+}
+
+.hexTopS,
+.hexBottomS {
+  position: absolute;
+  z-index: 1;
+  width: 88.39px;
+  height: 88.39px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 13.31px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/*counter transform the bg image on the caps*/
+.hexTopS:after,
+.hexBottomS:after {
+  content: "";
+  position: absolute;
+  width: 115.0000px;
+  height: 66.39528095680697px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-33.1976px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-33.1976px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-33.1976px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTopS {
+  top: -44.1942px;
+  border-top: solid 7.0711px #ffffff;
+  border-right: solid 7.0711px #ffffff;
+}
+
+.hexTopS:after {
+  background-position: center top;
+}
+
+.hexBottomS {
+  bottom: -44.1942px;
+  border-bottom: solid 7.0711px #ffffff;
+  border-left: solid 7.0711px #ffffff;
+}
+
+.hexBottomS:after {
+  background-position: center bottom;
+}
+
+.hexagonS:after {
+  content: "";
+  position: absolute;
+  top: 2.8868px;
+  left: 0;
+  width: 115.0000px;
+  height: 66.3953px;
+  z-index: 2;
+  background: inherit;
+}
+/**************************************************************************/
+
+.left{
+    display: flex;
+}
+
+.right{
+    
+    display: flex;
+}
+.container{
+    top: -55px;
+}
+.small-hex-container{
+    position: relative;
+    top: 135px;
+    left:15px;
+}
+.pair1{
+    display: flex;
+    position: absolute;
+    left: 15.5%;
+    top: -110px;
+}
+.pair2{
+    display: flex;
+    position: absolute;
+    left: 7%;
+    top: 30px;
+}
+.pair3{
+    display: flex;
+    position: absolute;
+    left:15.5%;
+    top: 163px;
+}
+.pair4{
+    display: flex;
+    position: absolute;
+    right: 16%;
+    top :-108px;
+}
+.pair5{
+    display: flex;
+    position: absolute;
+    right: 9%;
+    top: 25px;
+}
+.pair6{
+    display: flex;
+    position: absolute;
+    right: 17%;
+    top: 160px;
+}
+
+.footer{
+   
+
+}
+.hex1{
+    
+}
+.hex2{
+    
+}
+.hex3{
+   
+}
+.hex7{
+    
+}
