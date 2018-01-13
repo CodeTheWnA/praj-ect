@@ -1,9 +1,9 @@
 <!--Header Start-->
 <div class="header wid-100 blur">
 		<div class="row">
-			<div class="wid-7 prajLogo"><img src="common/images/logo.png"></div>
+			<div class="wid-7 prajLogo"><img src="common/images/logoN.png"></div>
 			<div class="wid-40 prajTxt">
-				<img src="common/images/prajwalanLogo.png">
+				<img src="common/images/prajwalanLogoN.png">
 				<span id="typed"></span>
 				<script>
 					var typed = new Typed("#typed", {

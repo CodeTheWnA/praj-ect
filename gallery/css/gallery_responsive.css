@@ -1,0 +1,10 @@
+@media only screen and (max-width: 900px){
+    .big_img{
+        width: 400%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .big_img{
+        width: 450%;
+    }
+}

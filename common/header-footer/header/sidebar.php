@@ -3,8 +3,8 @@
 	<div class="sidebar">
 		<li class="logo">
 			<div class="row">
-				<div class="wid-20 prajLogo"><img src="common/images/logo.png"></div>
-				<div class="wid-80 prajTxt"><img src="common/images/prajwalanLogo.png"></div>
+				<div class="wid-20 prajLogo"><img src="common/images/logoN.png"></div>
+				<div class="wid-80 prajTxt"><img src="common/images/prajwalanLogoN.png"></div>
 			</div>
 			<span class="close"><i class="fas fa-align-left"></i>CLOSE</span>
 		</li>

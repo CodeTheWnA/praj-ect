@@ -1,0 +1,183 @@
+html, body {
+				height: 100%;
+			}
+
+			body {
+				/*background: radial-gradient(ellipse at center, rgb(50,50,50)0%, rgb(0,0,0)100%);*/
+                   background: radial-gradient( ellipse at center, rgb(20, 20, 20) 0%, rgb(0, 0, 0) 100%);
+				margin: 0;
+				font-family: Helvetica, sans-serif;;
+				overflow: hidden;
+			}
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+#container{
+    top: -10%;
+}
+			a {
+				color: #ffffff;
+			}
+
+			#info {
+				position: absolute;
+				width: 100%;
+				color: #ffffff;
+				padding: 5px;
+				font-family: Monospace;
+				font-size: 13px;
+				font-weight: bold;
+				text-align: center;
+				z-index: 1;
+			}
+
+			#menu {
+				position: absolute;
+				bottom: 20px;
+				width: 100%;
+				text-align: center;
+			}
+
+			.element {
+				width: 480px;
+				height: 640px;
+				box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+				border: 1px solid rgba(127,255,255,0.25);
+                border-radius: 1%;
+				text-align: center;
+				cursor: pointer;
+			}
+
+			.element:hover {
+				box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+				border: 3px solid rgba(127,255,255,0.75);
+               
+			}
+
+            .element1 {
+				width: 480px;
+				height: 640px;
+				box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+				border: 1px solid rgba(127,255,255,0.25);
+                border-radius: 1%;
+				text-align: center;
+				cursor: pointer;
+                display: none;
+			}
+
+			.element1:hover {
+				box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+				border: 3px solid rgba(127,255,255,0.75);
+                opacity: 1;
+			}
+
+				.element .number {
+					position: absolute;
+					top: 20px;
+					right: 20px;
+					font-size: 12px;
+					color: rgba(127,255,255,0.75);
+				}
+
+				.element .symbol, .element1 .post,.element1 .name,.element1 .email,.element1 .number  {
+					position: absolute;
+					top: 40px;
+					left: 0px;
+					right: 0px;
+					font-size: 60px;
+					font-weight: bold;
+					color: rgba(255,255,255,0.55);
+					text-shadow: 0 0 10px rgba(0,255,255,0.45);
+				}
+.heading{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    font-weight: bold;
+    color: rgba(255,255,255,0.55);
+    text-shadow: 0 0 10px rgba(0,255,255,0.45);
+    /**/
+}
+.heading span{
+    border-bottom: 4px solid rgba(0,255,255,0.45);
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 100px;
+}
+.element1 .post{
+    border-bottom: 6px solid rgba(127,255,255,0.75);
+    border-radius: 10%;
+    top: 0px;
+    height: 70px;
+}
+.element1 .number{
+    
+    border-radius: 10%;
+    max-height: 50px;
+    font-size: 35px;
+    top: 590px;
+}
+.element1 .name{
+    border-top: 6px solid rgba(127,255,255,0.75);
+    border-radius: 10%;
+    max-height: 50px;
+    font-size: 45px;
+    top: 490px;
+}
+.element1 .email{
+    
+    border-radius: 10%;
+    top: 540px;
+    font-size: 35px;
+    max-height: 50px;
+}
+.element1 .m_img{
+    position: relative;
+    top: 77px;
+    width: 478px;
+    height: 414px;
+}
+				.element .details {
+					position: absolute;
+					bottom: 15px;
+					left: 0px;
+					right: 0px;
+					font-size: 12px;
+					color: rgba(127,255,255,0.75);
+				}
+
+			button {
+				color: rgba(127,255,255,0.75);
+				background: transparent;
+				outline: 1px solid rgba(127,255,255,0.75);
+				border: 0px;
+				padding: 5px 10px;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: rgba(0,255,255,0.5);
+			}
+			button:active {
+				color: #000000;
+				background-color: rgba(0,255,255,0.75);
+			}
+#details{
+    width: 480px;
+    height: 640px;
+    box-shadow: 0px 0px 12px rgba(255,0,0,0.5);
+    border: 1px solid rgba(127,255,255,0.25);
+    border-radius: 1%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#back{
+    position: absolute;
+    right: 5%;
+    bottom: 30px;   
+    display: none;
+}

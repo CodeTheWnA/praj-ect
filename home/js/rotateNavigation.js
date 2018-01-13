@@ -8,3 +8,10 @@ function rotateNav(){
 		setTimeout( rotateNav, 3000);
 	}	
 }
+VanillaTilt.init(document.querySelector(".mainNavigation"), {
+	reverse: true,
+	max: 20,
+	speed: 50,
+	axis: "x",
+	easing: "ease-in-out"
+});
