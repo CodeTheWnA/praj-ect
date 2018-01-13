@@ -21,6 +21,40 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background: url(home/images/themeBg.jpg);
+		}
+		.colgLogo img {
+		    margin: 0.55rem 1.3rem;
+		    height: 100%;
+		}
+		.prajLogo img {
+		    left: 1.4rem;
+		}
+		.prajLogo img {
+		    left: 1.4rem;
+		}
+		#typed{
+			color:#fff;
+		}
+		strong{
+			color: #02dd83;
+		}	
+		.notice, .update {
+		    background-color: #00000010;
+		}
+		.notice span, .update span{
+			color: white;
+			font-weight: 500;
+		}
+		.footer a{
+			color: #ffffffd1;
+		}
+	</style>
 </head>
 <body>
 	<?php 
@@ -30,7 +64,7 @@
 	<script src="common/js/three.min.js"></script>
 	<script src="common/js/Projector.js"></script>
 	<script src="common/js/CanvasRenderer.js"></script>
-	<script src="home/js/background2.js"></script>
+    <script src="home/js/background.js"></script>
 
 	<div class="midData row blur">
 		<div class="left wid-25">
@@ -43,8 +77,8 @@
 			</div>
 		</div>
 
-		<div class="wid-40 mainNavigation" id="mainNavigation">
-			<div class="circle">
+		<div class="wid-40 mainNavigation">
+			<div class="circle" id="mainNavigation">
 				<li class="menu-item" style="transform: rotateZ(0deg);"><a href="" class="link-color txt-color" ><i class="fas fa-calendar-alt"></i>EVENTS</a></li>
 				<li class="menu-item" style="transform: rotateZ(60deg);"><a href="" class="link-color txt-color" ><i class="fas fa-cogs"></i>WORKSHOPS</a></li>
 				<li class="menu-item" style="transform: rotateZ(120deg);"><a href="" class="link-color txt-color" ><i class="fas fa-handshake"></i>SPONSORS</a></li>	
@@ -52,7 +86,6 @@
 				<li class="menu-item" style="transform: rotateZ(240deg);"><a href="" class="link-color txt-color" ><i class="fas fa-users"></i>CONTACT US</a></li>	
 				<li class="menu-item" style="transform: rotateZ(300deg);"><a href="" class="link-color txt-color" ><i class="fas fa-info-circle"></i>ABOUT US</a></li>
 			</div>
-			<script src="home/js/rotateNavigation.js"></script>
 		</div>
 		<div class="right wid-25">
 			<div class="wid-100 updateBoard">
@@ -67,5 +100,7 @@
 	<?php 
 		include('common/header-footer/footer/footer.php');
 	?>
+	<script src="home/plugins/vanilla-tilt.min.js"></script>
+	<script src="home/js/rotateNavigation.js"></script>
 </body>
 </html>

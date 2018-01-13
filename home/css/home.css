@@ -1,6 +1,4 @@
-body{
-	overflow: hidden;
-}
+
 .midData{
 	margin-top: 2rem;
 }
@@ -31,7 +29,8 @@ body{
 }
 .notice,.update{
 	margin:0.5rem 0 0;
-	background-color: #00968847;
+	background-color: #ea9d2620;
+    border: 1px solid #ea9d263d;
     border-radius: 5px;
     padding: 0.2rem 0.5rem;
 }
@@ -75,11 +74,12 @@ body{
 .mainNavigation a{
 	transform: rotate(90deg);
     left: 50%;
-    color: #999999;
+    color: #dfdfdf;
     text-align: center;
     width: 12rem;
     padding: 0.7rem;
     height: 4rem;
+    border-radius: 50%;
 }
 .mainNavigation i{
 	width: auto;
@@ -87,6 +87,6 @@ body{
     top: 0.3rem;
 }
 .menu-item:hover .link-color{
-	color: #111!important;
+	color: #02df82!important;
 	transition: 0.25s ease-in;
 }

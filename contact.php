@@ -1,30 +1,84 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>three.js css3d - periodic table</title>
+		<title>Prajwalan 18 | Contact Us</title>
 		<meta charset="utf-8">
+        <link rel="icon" type="img/icon" href="common/images/favicon.ico"/>
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" type="text/css" href="contact/css/contact.css">
         <link rel="stylesheet" type="text/css" href="contact/css/contact-responsive.css">
+        <link rel="stylesheet" type="text/css" href="common/header-footer/header/header.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="common/header-footer/footer/footer.css">
+	
+	<link rel="stylesheet" type="text/css" href="common/header-footer/header/headerResponsive.css">
+	
+	<link rel="stylesheet" type="text/css" href="common/header-footer/footer/footerResponsive.css">
+	<link rel="stylesheet" type="text/css" href="common/header-footer/header/sidebarResponsive.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    
 		<style>
-            canvas{height: 200%;}
-		</style>
+            canvas{height: 100%;}
+            <style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			
+		}
+		.colgLogo img {
+		    margin: 0.55rem 1.3rem;
+		    height: 100%;
+		}
+		.prajLogo img {
+		    left: 1.4rem;
+		}
+		.prajLogo img {
+		    left: 1.4rem;
+		}
+		#typed{
+			color:#fff;
+		}
+		strong{
+			color: #02dd83;
+		}	
+		.notice, .update {
+		    background-color: #00000010;
+		}
+		.notice span, .update span{
+			color: white;
+			font-weight: 500;
+		}
+		.footer a{
+			color: #ffffffd1;
+		}
+	</style>
+		
 	</head>
 	<body>
-    
+        
+    <?php include 'common/header-footer/header/header.php'?>
+    <?php include 'common/header-footer/header/sidebar.php'?>
 		<script src="contact/js/three.js"></script>
 		<script src="contact/js/libs/tween.min.js"></script>
 		<script src="contact/js/controls/TrackballControls.js"></script>
 		<script src="contact/js/renderers/CSS3DRenderer.js"></script>
-        <img src="contact/img/background3.jpeg" class="background">
+        <script src="common/header-footer/header/sidebar.js"></script>
+        
+      
+        
 		<div id="container"></div>
 		
         
-		<div id="menu">
+			<!--<button id="table">TABLE</button>-->
+<div id="menu">
 			<!--<button id="table">TABLE</button>-->
 			
-			<button id="helix">HELIX</button>
-			<button id="grid">GRID</button>
+			
             <button id="back">BACK</button>
 		</div>
 
@@ -43,7 +97,7 @@
                 "Overall", "Hydrogen", 
                 "Web & App", "Helium", 
 				"Audit", "Oxygen", 
-				"Alumni Sponsorship", "0",
+				"Core Designing", "0",
 				"Networking", "Neon", 
 				"Core Supporting", "Sodium", 
 				"Core Editing", "Magnesium", 
@@ -54,7 +108,6 @@
 				"co-Convayner", "Aluminium", 
                 "Convayner", "Sodium", 
                 "Convayner", "Sodium", 
-                "Convayner", "Sodium", 
                 "co-Convayner", "Magnesium",
 				"co-Convayner", "Aluminium"
                 
@@ -63,97 +116,103 @@
 			];
             
 var overall=[
-"Overall Co-Convener","Satyajit KHATKE","+918806722050","contact/img/overall/",
-"Co-Convener","Ashwin TIWARI","+918275889497","contact/img/overall/",
-"Convener","Mandar Joshi","+918485861033","contact/img/overall/",
-"Co-Convener","Rohit JAMNARE","+919404499585","contact/img/overall/",
-"Co-Convener","Ambika PANDIT","+919595904501","contact/img/overall/"];
+"Overall Co-Convener","Satyajit KHATKE","+918806722050","contact/img/overall/../default-profile-image.jpg",
+"Co-Convener","Ashwin TIWARI","+918275889497","contact/img/overall/ashwin.jpg",
+"Convener","Mandar Joshi","+918485861033","contact/img/overall/mandar.jpg",
+"Co-Convener","Rohit JAMNARE","+919404499585","contact/img/overall/rohit_j.jpg",
+"Co-Convener","Ambika PANDIT","+919595904501","contact/img/overall/ambika.jpg"];
 
 var web=[
-"Co-Convener","Hrushikesh Masne","+919665680856","contact/img/Web & App",
-"Co-Convener","Nikhil Khandare","+918308492192","contact/img/Web & App",
-"Convener","Suved Ghanmode","+917798534854","contact/img/Web & App",
-"Co-Convener","Rohit Badge","+919527428120","contact/img/Web & App"];
+"Co-Convener","Hrushikesh Masne","+919665680856","contact/img/Web & App/hrushikesh.jpg",
+"Co-Convener","Nikhil Khandare","+918308492192","contact/img/Web & App/nikhil.jpg",
+"Convener","Suved Ghanmode","+917798534854","contact/img/Web & App/suved.jpg",
+"Co-Convener","Rohit Badge","+919527428120","contact/img/Web & App/rohit.jpg"];
 
-var core_supporting=["Co-Convener","Chetan VINCHURKAR","+918390581759","contact/img/core supporting",
-"Co-Convener","Prajyot FULARI","+918087718077","contact/img/core supporting",
-"Convener","Shubham BELE","+917507836595","contact/img/core supporting",
-"Convener","Purva AWARE","+917249538277","contact/img/core supporting",
-"Co-Convener","Varun Alode","+918380888982","contact/img/core supporting",
-"CoConvener","Apurva BEDRE","+919405666711","contact/img/core supporting"];
+var core_supporting=[
+    "Co-Convener","Chetan VINCHURKAR","+918390581759","contact/img/core_supporting/../default-profile-image.jpg",
+"Co-Convener","Prajyot FULARI","+918087718077","contact/img/core_supporting/../default-profile-image.jpg",
+"Convener","Shubham BELE","+917507836595","contact/img/core_supporting/shubham.jpg",
+"Convener","Purva AWARE","+917249538277","contact/img/core_supporting/default-profile-image.jpg",
+"Co-Convener","Varun Alode","+918380888982","contact/img/core_supporting/../default-profile-image.jpg",
+"CoConvener","Apurva BEDRE","+919405666711","contact/img/core_supporting/../default-profile-image.jpg"];
 
-var core_sponsorship=["Co-Convener","Ameya DESHPANDE","+919689486540","contact/img/core sponsorship",
-"Co-Convener","Prashant JADHAO","+917030089840","contact/img/core sponsorship",
-"Convener","Amol FULZELE", "+918180812163","contact/img/core sponsorship"]
+var core_sponsorship=["Co-Convener","Ameya DESHPANDE","+919689486540","contact/img/core_sponsorship",
+"Co-Convener","Ameya DESHPANDE","+919689486540","contact/img/core_sponsorship/ameya.jpg",
+"Convener","Amol FULZELE", "+918180812163","contact/img/core_sponsorship/amol.jpg",
+"Co-Convener","Prashant JADHAO","+917030089840","contact/img/core_sponsorship/prashant.jpg"]
 
 var event_sponsorship=[
-"Co-Convener","Bhushan AGRAWAL","+919403900642","contact/img/event sponsorship",
 "Co-Convener","Eshwaree SHINGWEKAR", "+918308089494","contact/img/event sponsorship",
-"Convener","Raj Singh BAIS","+919595606030","contact/img/event sponsorship"];
+"Co-Convener","Eshwaree SHINGWEKAR", "+918308089494","contact/img/event sponsorship/../default-profile-image.jpg",
+"Convener","Raj Singh BAIS","+919595606030","contact/img/event sponsorship/raj.jpg",
+"Co-Convener","Bhushan AGRAWAL","+919403900642","contact/img/event sponsorship/bhushan.jpg",];
 
 var outreach=[
-"Co-Convener","Aachal MUNDEL", "+917385829145","contact/img/outreach",
-"Co-Convener","Manthan DIXIT","+919075122465","contact/img/outreach",
-"Convener","Shubham NIMBHORKAR","+917249834052","contact/img/outreach",
-"Convener","Shreya SAWARKAR","+918007960483","contact/img/outreach",
-"Co-Convener","Rutuja GANDHI","+919075277114","contact/img/outreach",
-"Co-Convener","Samiksha TAYADE","+918793351418","contact/img/outreach",
-"Co-Convener","Noor Sabha QURESHI","+917447327661","contact/img/outreach"];
+"Co-Convener","Aachal MUNDEL", "+917385829145","contact/img/outreach/aachal.jpg",
+"Co-Convener","Manthan DIXIT","+919075122465","contact/img/outreach/manthan.jpg",
+"Convener","Shubham NIMBHORKAR","+917249834052","contact/img/outreach/../default-profile-image.jpg",
+"Convener","Shreya SAWARKAR","+918007960483","contact/img/outreach/shreya.jpg",
+"Co-Convener","Rutuja GANDHI","+919075277114","contact/img/outreach/rutuja.jpg",
+"Co-Convener","Samiksha TAYADE","+918793351418","contact/img/outreach/samiksha.jpg",
+"Co-Convener","Noor Sabha QURESHI","+917447327661","contact/img/outreach/noor.jpg"];
 
 var publicity=[
-"Co-Convener","Dolly JAIN","+919860850186","contact/img/publicity",
-"Co-Convener","Harshada INGOLE","+919970908702","contact/img/publicity",
-"Convener","Mayuri PURI","+918975572659","contact/img/publicity",
-"Convener","Anchal DAGA","+919421787338","contact/img/publicity",
-"Co-Convener","Yamin LAKADKUTTA","+918208037225","contact/img/publicity",
-"Co-Convener","Manthan FURSULE","+919420622999","contact/img/publicity"];
+"Co-Convener","Dolly JAIN","+919860850186","contact/img/publicity/dolly.jpg",
+"Co-Convener","Harshada INGOLE","+919970908702","contact/img/publicity/../default-profile-image.jpg",
+"Convener","Mayuri PURI","+918975572659","contact/img/publicity/../default-profile-image.jpg",
+"Convener","Anchal DAGA","+919421787338","contact/img/publicity/anchal.jpg",
+"Co-Convener","Yamin LAKADKUTTA","+918208037225","contact/img/publicity/yamin.jpg",
+"Co-Convener","Manthan FURSULE","+919420622999","contact/img/publicity/manthan_f.jpg"];
 
 var core_editing=[
-"Co-Convener","Kunal WANIKAR","+918237558082","contact/img/core editing",
-"Convener","Pradeep NOKWAL","+919595559431","contact/img/core editing"];
+    "Co-Convener","Kunal WANIKAR","+918237558082","contact/img/core editing",
+"Co-Convener","Kunal WANIKAR","+918237558082","contact/img/core editing/kunal.jpg",
+"Convener","Pradeep NOKWAL","+919595559431","contact/img/core editing/pradeep.jpg"];
 
 var networking=[
-"Co-Convener","Ankit WARJURKAR","+917972361259","contact/img/networking",
-"Co-Convener","Rashi NANWANI","+917249391211","contact/img/networking",
-"Convener","Gaurav GILALKAR","+919545988746","contact/img/networking",
-"Convener","Shiragi PATTALWAR","+919404924112","contact/img/networking",
-"Co-Convener","Himanshu SHARMA","+918412027866","contact/img/networking",
-"Co-Convener","Namrata GAJBHIYE","+919511962536","contact/img/networking"];
+"Co-Convener","Ankit WARJURKAR","+917972361259","contact/img/networking/ankit.jpg",
+"Co-Convener","Rashi NANWANI","+917249391211","contact/img/networking/../default-profile-image.jpg",
+"Convener","Gaurav GILALKAR","+919545988746","contact/img/networking/../default-profile-image.jpg",
+"Convener","Shiragi PATTALWAR","+919404924112","contact/img/networking/shiragi.jpg",
+"Co-Convener","Himanshu SHARMA","+918412027866","contact/img/networking/himanshu.jpg",
+"Co-Convener","Namrata GAJBHIYE","+919511962536","contact/img/networking/default-profile-image.jpg"];
 
 var infra=[
-"Co-Convener","Lankesh PUREKAR","+919881996745","contact/img/infrastructure designing",
-"Co-Convener","Sharayu DAHAKE","+917798122874","contact/img/infrastructure designing",
-"Convener","Tejas CHEDE","+919921299445","contact/img/infrastructure designing",
-"Convener","Niraj SONULE","+919637177986","contact/img/infrastructure designing",
-"Co-Convener","Sanghal SAHARE","+918485004625","contact/img/infrastructure designing"];
+"Co-Convener","Lankesh PUREKAR","+919881996745","contact/img/infra/lankesh.jpg",
+"Co-Convener","Sharayu DAHAKE","+917798122874","contact/img/infra/../default-profile-image.jpg",
+"Convener","Tejas CHEDE","+919921299445","contact/img/infra/tejas.jpg",
+"Convener","Niraj SONULE","+919637177986","contact/img/infra/niraj.jpg",
+"Co-Convener","Sanghal SAHARE","+918485004625","contact/img/infra/senghal.jpg"];
 
 var core_designing=[
-"Co-Convener","Mohit LALWANI","+919921066687","contact/img/core designing",
-"Co-Convener","Sukhada KULKARNI","+919404107032","contact/img/core designing",
-"Convener","Abhishek AGRAWAL","+919028357656","contact/img/core designing",
-"Co-Convener","Yash BHANDARWAR","+918411041468","contact/img/core designing"];
+"Co-Convener","Mohit LALWANI","+919921066687","contact/img/core designing/mohit.jpg",
+"Co-Convener","Sukhada KULKARNI","+919404107032","contact/img/core designing/sukhada.jpg",
+"Convener","Abhishek AGRAWAL","+919028357656","contact/img/core designing/abhishek.jpg",
+"Co-Convener","Yash BHANDARWAR","+918411041468","contact/img/core designing/yash.jpg"];
 
 var audit=[
-"Co-Convener","Pratiksha PARASHAR","+919011827603","contact/img/audit",
-"Co-Convener","Rohit CHIMOTE","+919665552911","contact/img/audit",
-"Convener","Sanket RATHI","+919970502548","contact/img/audit",
-"Co-Convener","Mahima HIRAPURE","+918554853133","contact/img/audit",
-"Co-Convener","Yash CHANDAK","+919421181199","contact/img/audit"];
+
+"Co-Convener","Rohit CHIMOTE","+919665552911","contact/img/audit/rohit_c.jpg",
+"Co-Convener","Pratiksha PARASHAR","+919011827603","contact/img/audit/pratiksha.jpg",
+"Convener","Sanket RATHI","+919970502548","contact/img/audit/../default-profile-image.jpg",
+"Co-Convener","Mahima HIRAPURE","+918554853133","contact/img/audit/mahima.jpg",
+"Co-Convener","Yash CHANDAK","+919421181199","contact/img/audit/../default-profile-image.jpg"];
 
 var alumni_sponsorship=[
-"Co-Convener","Shweta JOSHI","+918378098121","contact/img/alumni sponsorship",
-"Co-Convener","Somnath GHOSH","+919757218288","contact/img/alumni sponsorship",
-"Convener","Rajkumar NAIK","+918007379537","contact/img/alumni sponsorship",
-"Convener","Nikita GHODE","+919021021549","contact/img/alumni sponsorship"];
+    "Co-Convener","Somnath GHOSH","+919757218288","contact/img/alumni sponsorship",
+"Co-Convener","Somnath GHOSH","+919757218288","contact/img/alumni sponsorship/somnath.jpg",
+"Convener","Rajkumar NAIK","+918007379537","contact/img/alumni sponsorship/rajkumar.jpg",
+"Convener","Nikita GHODE","+919021021549","contact/img/alumni sponsorship/nikita.jpg",
+"Co-Convener","Shweta JOSHI","+918378098121","contact/img/alumni sponsorship/shweta.jpg",];
 
 
 			var camera, scene, renderer;
 			var controls;
 
 			var objects = [];
-			var targets = {  helix: [], helix1: [], grid: [],grid1: [] };
+			var targets = {  helix: [], helix1: [] };
             
-            var current_formation;
+            var current_formation, conv_no=1;
 
 			init();
 			animate();
@@ -165,15 +224,25 @@ var alumni_sponsorship=[
                 if(window.innerHeight<500){
                     camera.position.z = 3000;
                 }
+                
 
 				scene = new THREE.Scene();
 
 				// table
 
-				for ( var i = 0; i < table.length; i += 2 ) {
+				for ( var i = 0; i < table.length+2; i += 2 ) {
 
 					var element = document.createElement( 'div' );
-                    if(i>24){
+                     if(i>=table.length){
+                        element.style.width = "200%" ;
+                        var center = document.createElement( 'center' );
+                        
+                        center.className = 'heading';
+                        center.innerHTML = "";
+                        
+                        element.appendChild(center);
+                    }
+                    else if(i>24 ){
                         element.className = 'element1';
                         element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
                         
@@ -200,6 +269,7 @@ var alumni_sponsorship=[
                         element.appendChild(image);
                         
                     }
+                    
 					   
                     else{
                         element.className = 'element';
@@ -233,31 +303,6 @@ var alumni_sponsorship=[
 
 				}
                 
-                
-                
-				// sphere
-
-				var vector = new THREE.Vector3();
-				var spherical = new THREE.Spherical();
-
-				for ( var i = 0, l = objects.length; i < l; i ++ ) {
-
-					var phi = Math.acos( -1 + ( 2 * i ) / l );
-					var theta = Math.sqrt( l * Math.PI ) * phi;
-
-					var object = new THREE.Object3D();
-
-					spherical.set( 800, phi, theta );
-
-					object.position.setFromSpherical( spherical );
-
-					vector.copy( object.position ).multiplyScalar( 2 );
-
-					object.lookAt( vector );
-
-					//targets.sphere.push( object );
-
-				}
 
 				// helix
 
@@ -267,8 +312,15 @@ var alumni_sponsorship=[
                 var innerCylindrical = new THREE.Cylindrical();
 
 				for ( var i = 0, l = objects.length; i < l; i ++ ) {
+                    if(i==objects.length-1){
+                        var object = new THREE.Object3D();
+                        object.position.y = 5000;
+                        object.position.x = 300;
+                        object.position.z = 1000;
+                        targets.helix.push( object );
+                    }
                     
-                    if(i>12){
+                     else if(i>12){
                         var theta = (i-12) * 1 + Math.PI;
                         var y = - ( (i-12) * 8 ) + 450;
 
@@ -289,6 +341,7 @@ var alumni_sponsorship=[
 
                         targets.helix.push( object );
                     }
+                    
                     else{
                         var theta = i * 0.482 + Math.PI;
                         var y = - ( i * 8 ) + 450;
@@ -302,6 +355,8 @@ var alumni_sponsorship=[
                         vector.x = object.position.x * 2;
                         vector.y = object.position.y;
                         vector.z = object.position.z * 2;
+                        
+                       
 
                         object.lookAt( vector );
 
@@ -318,8 +373,17 @@ var alumni_sponsorship=[
                 //helix1
                 
                 for ( var i = 0, l = objects.length; i < l; i ++ ) {
-                    if(i>12){
-                        var theta = (i-12) * 0.78 + Math.PI;
+                    
+                    if(i==objects.length-1){
+                        var object = new THREE.Object3D();
+                        object.position.y = 800;
+                        object.position.x = -100;
+                        object.position.z = -200;
+                        object.rotation.y = 0.6;
+                        targets.helix1.push( object );
+                    }
+                     else if(i>12){
+                        var theta = (i-12) * 0.90 + Math.PI;
                         var y = - ( (i-12) * 8 ) + 450;
 
                         var object = new THREE.Object3D();
@@ -333,12 +397,14 @@ var alumni_sponsorship=[
                         vector.z = object.position.z * 2;
                         
                         //object.position.z = 500;
+                         
+
 
                         object.lookAt( vector );
 
                         targets.helix1.push( object );
                     }
-                    
+                  
                     else{
                         var theta = i * 0.482 + Math.PI;
                         var y = - ( i * 8 ) + 450;
@@ -353,6 +419,8 @@ var alumni_sponsorship=[
                         vector.y = object.position.y;
                         vector.z = object.position.z * 2;
                         
+                      
+
                         object.lookAt( vector );
                        
                         targets.helix1.push( object );
@@ -365,70 +433,8 @@ var alumni_sponsorship=[
 
 				// grid
 
-				for ( var i = 0; i < objects.length; i ++ ) {
-                    
-					var object = new THREE.Object3D();
-                    object.position.x = ( ( i % 5 ) * 800 ) - 1600;
-					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 800 ) + 900;
-					object.position.z = ( Math.floor( i / 25 ) ) * 3000 - 700;
-                    
-                    if(i>12){
-                        object.position.x = ( ( (i-13) % 5 ) * 800 ) - 1000;
-					   object.position.z =  -2000;
-                        object.position.y =  5000;
-                    }
-
-                    if(window.innerWidth<750){
-                       object.position.x = ( ( i % 4 ) * 650 ) - 1000;
-					   object.position.y = ( - ( Math.floor( i / 4 ) % 5 ) * 750 ) + 1050;
-					   object.position.z = ( Math.floor( i / 25 ) ) * 3000 - 700;
-                        camera.position.z = 4300;
-
-                    }
-                    
-                    if(window.innerWidth<480){
-                       object.position.x = ( ( i % 3 ) * 800 ) - 1200;
-					   object.position.y = ( - ( Math.floor( i / 3 ) % 5 ) * 800 ) + 900;
-					   object.position.z = ( Math.floor( i / 25 ) ) * 3000 - 700;
-
-                    }
-					
-                    
-					targets.grid.push( object );
-                    
-                    
-
-				}
-                
                 //grid1
-                for(i=0;i<objects.length;i++){
-                    var object = new THREE.Object3D();
-                    object.position.x = ( ( i % 5 ) * 800 ) - 1600;
-					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 800 ) + 900;
-					object.position.z = ( Math.floor( i / 25 ) ) * 3000 + 7000;
-                    
-                    if(i>12){
-                        object.position.x = ( ( (i-13) % 5 ) * 800 ) - 800;
-					   object.position.y =  0;
-                        object.position.z =  800;
-                    }
-
-                    if(window.innerWidth<750){
-                       object.position.x = ( ( i % 4 ) * 650 ) - 1000;
-					   object.position.y = ( - ( Math.floor( i / 4 ) % 5 ) * 750 ) + 1050;
-					   object.position.z = ( Math.floor( i / 25 ) ) * 3000 - 700;
-                        camera.position.z = 4300;
-
-                    }
-                    
-                    if(window.innerWidth<480){
-                       object.position.x = ( ( i % 3 ) * 800 ) - 1200;
-					   object.position.y = ( - ( Math.floor( i / 3 ) % 5 ) * 800 ) + 900;
-					   object.position.z = ( Math.floor( i / 25 ) ) * 3000 - 700;
-
-                    }
-                    targets.grid1.push( object );
-                }
+                
 
 				//
 
@@ -445,46 +451,10 @@ var alumni_sponsorship=[
 				controls.maxDistance = 6000;
 				controls.addEventListener( 'change', render );
 
-				//var button = document.getElementById( 'table' );
-				/*button.addEventListener( 'click', function ( event ) {
-
-					transform( targets.table, 2000 );
-
-				}, false );*/
-
-				/*var button = document.getElementById( 'sphere' );
-				button.addEventListener( 'click', function ( event ) {
-
-					transform( targets.sphere, 2000 );
-
-				}, false );*/
-                
-				var button = document.getElementById( 'helix' );
-				button.addEventListener( 'click', function ( event ) {
-
-					transform( targets.helix, 2000 );
-                    current_formation = "helix";
-
-				}, false );
-
-				var button = document.getElementById( 'grid' );
-				button.addEventListener( 'click', function ( event ) {
-
-					transform( targets.grid, 2000 );
-                    current_formation = "grid";
-
-				}, false );
-                /*if(window.innerWidth<500){
-                    transform( targets.helix, 2000 );
-                    current_formation = "helix";
-                }
-                else {
-                    transform( targets.grid, 2000 );
-                    current_formation = "grid";
-                }*/
-				    
+				
+				current_formation = "helix";
                 transform( targets.helix, 2000 );
-                current_formation = "helix";
+                
 				//
 
 				window.addEventListener( 'resize', onWindowResize, false );
@@ -509,9 +479,32 @@ var alumni_sponsorship=[
 						.to( { x: target.rotation.x, y: target.rotation.y, z: target.rotation.z }, Math.random() * duration + duration )
 						.easing( TWEEN.Easing.Exponential.InOut )
 						.start();
+                    
 
 				}
-
+                if(current_formation == 'helix'){
+                    var z_val = 3500;
+                    var x_val = -700;
+                }
+                    
+                else{
+                    
+                    if(conveyner_number ==  1){
+                        var x_val = 1200;
+                        var z_val = 2300;
+                    }
+                        
+                    else if(conveyner_number == 2){
+                        var x_val = 2000;
+                        var z_val = 1500;
+                    }
+                        
+                }
+                    
+                new TWEEN.Tween( camera.position )
+						.to( { x: x_val, y: 0, z: z_val}, Math.random() * duration + duration )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
 				new TWEEN.Tween( this )
 					.to( {}, duration * 2 )
 					.onUpdate( render )
@@ -558,7 +551,7 @@ var alumni_sponsorship=[
             back.addEventListener('click', backclick, false);
             
             var members = document.getElementsByClassName("element1");
-            
+            var conveyner_number = 0;
             var data = [];        
             function onclick( event ) {
                 
@@ -570,6 +563,8 @@ var alumni_sponsorship=[
                             break;
                         }
                     }
+                var heading = document.getElementsByClassName("heading")[0];
+                heading.innerHTML = "<span>"+x+"</span>";
                 back.style.display = "block";
                 for(var i=0;i<data.length;)
                     data.pop();
@@ -577,54 +572,67 @@ var alumni_sponsorship=[
                     case "Web & App":
                         for(var i=0; i< web.length; i++)
                             data.push(web[i]);
+                            conveyner_number = 1;
                         break;
                     case "Overall":
                         for(var i=0; i< overall.length; i++)
                             data.push(overall[i]);
+                        conveyner_number = 1;
                         break;
                     case "Outreach":
                         for(var i=0; i< outreach.length; i++)
                             data.push(outreach[i]);
+                        conveyner_number =2;
                         break;
                      case "Core Supporting":
                         for(var i=0; i< core_supporting.length; i++)
                             data.push(core_supporting[i]);
+                        conveyner_number = 2;
                         break;
                     case "Core Sponsorship":
                         for(var i=0; i< core_sponsorship.length; i++)
                             data.push(core_sponsorship[i]);
+                        conveyner_number = 1;
                         break;
                     case "Event Sponsorship":
                         for(var i=0; i< event_sponsorship.length; i++)
                             data.push(event_sponsorship[i]);
+                        conveyner_number =  1;
                         break;    
                     case "Publicity":
                         for(var i=0; i< publicity.length; i++)
                             data.push(publicity[i]);
+                        conveyner_number =  2;
                         break;
                     case "Core Editing":
                         for(var i=0; i< core_editing.length; i++)
                             data.push(core_editing[i]);
+                        conveyner_number =  1;
                         break;
                     case "Networking":
                         for(var i=0; i< networking.length; i++)
                             data.push(networking[i]);
+                        conveyner_number =  2;
                         break;
                     case "Infrastructure Designing":
                         for(var i=0; i< infra.length; i++)
                             data.push(infra[i]);
+                        conveyner_number =  2;
                         break;
                     case "Core Designing":
                         for(var i=0; i< core_designing.length; i++)
                             data.push(core_designing[i]);
+                        conveyner_number =  1;
                         break;
                     case "Audit":
                         for(var i=0; i< audit.length; i++)
                             data.push(audit[i]);
+                        conveyner_number =  1;
                         break;
                     case "Alumni Sponsorship":
                         for(var i=0; i< alumni_sponsorship.length; i++)
                             data.push(alumni_sponsorship[i]);
+                        conveyner_number =  2;
                         break;
                     
                     
@@ -636,6 +644,8 @@ var alumni_sponsorship=[
                     else
                         current_m = members[i/4+1];
                     current_m.style.display = 'block';
+                    if((x=="Event Sponsorship" || x=="Core Sponsorship" || x=="Core Editing" || x=="Alumni Sponsorship")  && i==0)
+                        current_m.style.display = 'none';
                     var m_name, m_post, m_email, m_number,m_img;
                     for(var j=0; j < current_m.childNodes.length ; j++){
                         if( current_m.childNodes[j].className == 'post')
@@ -655,27 +665,23 @@ var alumni_sponsorship=[
                     m_number.innerHTML = data[i+2];
                     m_img.src = data[i+3];
                 }
+                current_formation = "helix1"
                 transform( targets.helix1, 2000 );
-                setTimeout(camera_update,2500);
+                
+                
             }
             
             function backclick( event ){
-                if(current_formation == "helix"){
+                current_formation = "helix"
                     transform( targets.helix, 2000 );
-                }
-                else
-                    transform( targets.grid, 2000 );
+                
+                
                 setTimeout(hide_members, 2000);
                 
                 
                 
             }
             
-            function camera_update(){
-                camera.position.x = 0;
-                camera.position.y = 0;
-                camera.position.z = 3500;
-            }
             
             function hide_members(){
                 for(var i=0; i<members.length;i++)
@@ -687,5 +693,9 @@ var alumni_sponsorship=[
             
         
         </script>
+        <?php 
+		include('common/header-footer/footer/footer.php');
+	?>
+    
 	</body>
 </html>

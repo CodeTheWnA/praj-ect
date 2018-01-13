@@ -2,7 +2,7 @@ html, body {
 				height: 100%;
 			}
 			body {
-				background-color: #000000;
+				background: radial-gradient( #ffffff, #abbaab);
 				margin: 0;
 				font-family: Arial;
 				overflow: hidden;
@@ -37,14 +37,15 @@ html, body {
 				width: 100%;
 				height: 100%;
 				box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
-				border: 5px solid rgba(127,255,255,0.25);
+				border: 1px solid rgba(127,255,255,0.25);
+                border-radius: 1%;
 				text-align: center;
 				cursor: default;
 			}
 
 			.element:hover {
 				box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
-				border: 5px solid rgba(127,255,255,0.75);
+				border: 3px solid rgba(127,255,255,0.75);
 			}
 .element u span{
     padding: 5px;
@@ -65,11 +66,11 @@ html, body {
 					font-weight: bold;
                     padding: 5%;
 					color: rgba(255,255,255,0.75);
-					-webkit-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
-					-moz-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
-					-o-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
-					-ms-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
-					filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+					-webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.95));
+					-moz-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.95));
+					-o-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.95));
+					-ms-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.95));
+					filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.95));
 				}
 				.element .details {
 					position: absolute;
@@ -78,13 +79,13 @@ html, body {
 					right: 0px;
 					
 					
-					color: rgba(127,255,255,0.75);
+					color: rgba(255,255,255,0.75);
                     
-                    -webkit-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+                    -webkit-filter: drop-shadow(0px 0px 20px rgba(0,10,10,0.95));
 					-moz-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
 					-o-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
 					-ms-filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
-					filter: drop-shadow(0px 0px 20px rgba(0,255,255,0.95));
+					filter: drop-shadow(0px 0px 20px rgba(10,10,10,0.95));
 				}
 			button {
 				color: rgba(127,255,255,0.75);

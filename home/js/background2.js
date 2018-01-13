@@ -31,7 +31,7 @@
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
 				container.appendChild( renderer.domElement );
-				renderer.setClearColor( 0xfafafa, 1 );
+				renderer.setClearColor( 0x050505, 1 );
 
 				//particles
 
@@ -61,10 +61,10 @@
 
 				}
 				//texture
-				var texture = new THREE.TextureLoader().load( 'home/images/theme0.jpg', render );
+				var texture = new THREE.TextureLoader().load( 'home/images/2.png', render );
 				texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 				//sphere
-				geometry = new THREE.SphereGeometry(25, 15, 15);
+				geometry = new THREE.SphereGeometry(25, 25, 25);
 				material = new THREE.MeshPhongMaterial({map: texture, flatShading: THREE.FlatShading, color: 0xdcdcdc, emissive: 0x212321, specular: 0xffffff, shininess: 10, side: THREE.DoubleSide});
 				mesh = new THREE.Mesh(geometry, material);
 				mesh.position.y = -2;
@@ -140,7 +140,7 @@
 
 			function render() {
 				camera.position.x += ( -mouseX - camera.position.x ) * .0007;
-				camera.position.y += ( mouseY - camera.position.y ) * .00005;
+				camera.position.y += ( mouseY - camera.position.y ) * .0005;
 				camera.lookAt( scene.position );
 		
 				renderer.render( scene, camera );

@@ -189,12 +189,12 @@ hr{
 	transition: 0.25s ease-in;
 }
 .fadeInLeft {
-  transform: translate3d(-8%, 0, 0);
+  transform: translate3d(0%, 0, 0);
   opacity: 1;
   transition: 0.3s ease-in-out;
 }
 .fadeOutLeft {
-  transform: translate3d(-120%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
   opacity:0;
   transition: 0.4s ease-out;
 }
